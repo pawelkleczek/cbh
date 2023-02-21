@@ -9,3 +9,18 @@ You've been asked to refactor the function `deterministicPartitionKey` in [`dpk.
 You will be graded on the exhaustiveness and quality of your unit tests, the depth of your refactor, and the level of insight into your thought process provided by the written explanation.
 
 ## Your Explanation Here
+
+### Explanation of the changes to the body of the `deterministicPartitionKey` function:
+
+- Created early return to simplify nesting and reduce the body of the function.
+- Removed unnecessary variable `let candidate;`, and instead initialized candidate during its first assignment.
+- Removed the second check for candidate existence and used only one if statement to check for event existence.
+- Replaced nested if statements with conditional (ternary) operator for assigning candidate.
+- Re-organized the control flow to reduce the number of nested blocks and make the code more readable.
+
+### Explanation of the changes to unit tests:
+
+- Created a series of test cases to cover all possible code paths.
+- Added assertions to check length of the returned values.
+
+Overall, the refactored function is more readable and easier to understand. By simplifying the code and removing unnecessary checks, the control flow of the function is easier to follow, making it more readable. The unit tests are also more comprehensive and help to ensure the function behaves as expected.
