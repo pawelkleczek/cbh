@@ -50,3 +50,19 @@ Acceptance Criteria:
 - The `custom_id` field is successfully populated for each shift based on the Agent assigned to that shift
 
 Estimated time/effort: 2-3 hours
+
+### Task 3: Update Report Generation Function
+
+Summary: This task will update the `generateReport` function to use the custom ID of the Agent instead of the internal database ID in the reports generated for Facilities.
+
+Details:
+
+- Update the `generateReport` function to use the `custom_id` field instead of the internal database ID for the Agent assigned to each shift
+- Display the `custom_id` field on the generated report
+
+Acceptance Criteria:
+
+- The `generateReport` function is updated to use the `custom_id` field instead of the internal database ID for the Agent assigned to each shift
+- The `custom_id` is successfully displayed on the generated report
+
+Estimated time/effort: 2-3 hours
